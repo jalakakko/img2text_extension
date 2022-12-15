@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "I2T Cropper",
+    "version": "1.0.1",
+    "description": "Chrome extension for capturing area and converting it to image-to-text copy-paste",
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "notifications"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": [
+                "tesseract.js",
+                "transition.js"
+            ]
+        }
+    ],
+    "host_permissions": ["<all_urls>"],
+    "icons": {
+        "16": "./icons/icon16.png",
+        "64": "./icons/icon64.png"
+    }
+} 

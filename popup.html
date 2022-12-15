@@ -1,0 +1,27 @@
+<html> 
+    <head> 
+        <link rel="stylesheet" href="css/popup.css">  
+    </head>
+    <body> 
+        <div id="img_container">
+            <img id="imageid" src="" alt="No Image">  
+        </div>
+        <div id="checkbox_container">
+            <div>
+                <input type="checkbox" id="grayscale_button">   
+                <span id="grayscale_state"> Grayscale</span>
+            </div> 
+            <div>
+                <input type="checkbox" id="invert_button">   
+                <span id="invert_state"> Inverted</span>
+            </div>
+            <div>
+                <input type="checkbox" id="blacknwhite_button">   
+                <span id="blacknwhite_state"> BlacknWhite</span> 
+            </div>
+        </div>
+        <input type="range" min="0" max="256" step="1" value="128" class="slider" id="sat_slider" disabled="true">
+        <!-- <button id="convert_button">Convert</button>  -->
+        <script src="popup.js"></script>
+    </body>
+</html> 
